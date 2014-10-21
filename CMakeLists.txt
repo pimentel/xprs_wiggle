@@ -8,3 +8,7 @@ add_compile_options(-Wdeprecated-register)
 
 add_subdirectory(gff)
 add_subdirectory(src)
+
+add_subdirectory(test)
+enable_testing()
+add_test(ExampleTest test/exTests)
